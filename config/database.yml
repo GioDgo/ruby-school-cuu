@@ -21,20 +21,20 @@ default: &default
 
 development:
   <<: *default
-  database: meeho_development_course
+  database: meeho_development
   username: postgres
   host: localhost
   port: 5432
 
 test:
   <<: *default
-  database: meeho_test_course
+  database: meeho_test
   username: postgres
   host: localhost
   port: 5432
 
 production:
   <<: *default
-  database: meeho_production_course
+  database: meeho_production
   username: meeho
   password: <%= ENV['MEEHO_DATABASE_PASSWORD'] %>
